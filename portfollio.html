@@ -1,0 +1,59 @@
+# https://www.facebook.com/permalink.php?story_fbid=2806378226310731&id=100008157437260
+# Subscribed By isux gaming
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfollio design</title>
+    <link rel="stylesheet" type="text/css" href="css/landing.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.1.0/anime.min.js" integrity="sha256-98Q574VkbV+PkxXCKSgL6jVq9mrVbS7uCdA+vt0sLS8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+
+    <section class="banner" id="sec">
+        <header>
+            <a href="#" class="logo">Logo</a>
+            <div id="toggle" onclick="toggle()"></div>
+        </header>
+        <div class="content">
+            <h2>Hello World,<br>I'm <span>Kishan Kumar Maharana</span></h2>
+            <p>I know they are going to be honest with me. I am not going to get a subpar product; I know it is going to be good. That is the number one advantage of working with Exhibit Systems because I just do not want to be sold. I want to trust that
+                what I am getting is going to be good.</p>
+            <a href="main.php">Know More</a>
+        </div>
+        <ul class="sci">
+            <li class="img1">
+                <a href="#"><img src="images/facebook.png"></a>
+            </li>
+            <li class="img2">
+                <a href="#"><img src="images/twitter.png"></a>
+            </li>
+            <li class="img3">
+                <a href="#"><img src="images/linkedin.png"></a>
+            </li>
+        </ul>
+    </section>
+    <div id="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="main.php">Portfollio</a></li>
+            <li><a href="main.php">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <script type="text/javascript">
+        function toggle() {
+            var sec = document.getElementById('sec');
+            var nav = document.getElementById('navigation');
+            sec.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
