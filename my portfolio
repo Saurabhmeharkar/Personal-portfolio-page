@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESUME</title>
+    <link rel="stylesheet" href="resume.css">
+</head>
+<body>
+    <style>
+                @import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&family=Righteous&display=swap');
+
+          /*     font-family: 'Baloo Tammudu 2', cursive;
+
+              font-family: 'Righteous', cursive; */
+
+          :root *{
+            --borderColor: #000000;
+            --mainBackgroundColor: ;
+            --secondaryBackgroundColor: ;
+            --maintext: ;
+            --Secondarytext: ;
+            --previewShadow: ;
+            --buttonColor: ;
+            --previewBg: ;
+            --themeDotBorder: ;
+          }
+
+
+
+          h1, h2, h3, h4, h5, h6, strong {
+            color: var(--maintext);
+            margin: 0;
+            padding: 0;
+          }
+
+
+          a {
+            text-decoration: none;
+            color: #000000; 
+            font-family: 'Baloo Tammudu 2', cursive
+          }
+
+          ul {
+            list-style-type: none;
+          }
+
+          #container {
+            margin: 20px;
+            width: 400px;
+            height: 8px;
+            }
+
+          h1 {font-size: 56px;}
+          h2 {font-size: 36px;}
+          h3 {font-size: 28px;}
+          h4 {font-size: 24px;}
+          h5 {font-size: 20px;}
+          h6 {font-size: 16px;}
+
+
+          p, span, li, label, input, textarea {
+            color: var(--maintext);
+
+          } 
+          p {
+            font-size: 18px;
+            color: grey;
+            font-family: 'Baloo Tammudu 2', cursive;
+
+          }
+
+
+          body {
+            width: 1200px;	
+            height: 3000px;
+          }
+
+          #main-container {
+              margin-left: 150px;
+            margin-top: 50px;
+            width: 1100px;
+            height: 1800px;
+
+          }
+
+          #s1 {
+             font-family: 'Righteous', cursive;
+             border-bottom: 5px solid grey;
+             border-radius: 2.5px;
+          }
+
+          #s2 {
+              display: grid;
+              grid-template-columns: 1fr 1fr; 
+              grid-template-columns: 300px 700px;
+            grid-template-areas: 'left-column right-column';
+            column-gap: 50px;
+          }
+
+          .left-coloum {
+            width: 300px;
+            height: 800px;
+            padding-left: 100px;
+          }
+
+
+          .right-column {
+            width: 700px;
+            height: 800px;
+
+          }
+
+          /* telugu */
+          @font-face {
+            font-family: 'Baloo Tammudu 2';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: local('Baloo Tammudu 2 Regular'), local('BalooTammudu2-Regular'), url(https://fonts.gstatic.com/s/balootammudu2/v1/1Pt2g8TIS_SAmkLguUdFP8UaJcKO3nsX2aE.woff2) format('woff2');
+            unicode-range: U+0951-0952, U+0964-0965, U+0C00-0C7F, U+1CDA, U+200C-200D, U+25CC;
+          }
+          /* vietnamese */
+          @font-face {
+            font-family: 'Baloo Tammudu 2';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: local('Baloo Tammudu 2 Regular'), local('BalooTammudu2-Regular'), url(https://fonts.gstatic.com/s/balootammudu2/v1/1Pt2g8TIS_SAmkLguUdFP8UaJcKOzXsX2aE.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+          }
+          /* latin-ext */
+          @font-face {
+            font-family: 'Baloo Tammudu 2';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: local('Baloo Tammudu 2 Regular'), local('BalooTammudu2-Regular'), url(https://fonts.gstatic.com/s/balootammudu2/v1/1Pt2g8TIS_SAmkLguUdFP8UaJcKOzHsX2aE.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+          }
+          /* latin */
+          @font-face {
+            font-family: 'Baloo Tammudu 2';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: local('Baloo Tammudu 2 Regular'), local('BalooTammudu2-Regular'), url(https://fonts.gstatic.com/s/balootammudu2/v1/1Pt2g8TIS_SAmkLguUdFP8UaJcKOwnsX.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+          }
+          /* latin-ext */
+          @font-face {
+            font-family: 'Righteous';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: local('Righteous'), local('Righteous-Regular'), url(https://fonts.gstatic.com/s/righteous/v9/1cXxaUPXBpj2rGoU7C9WhnGFucE.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+          }
+          /* latin */
+          @font-face {
+            font-family: 'Righteous';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: local('Righteous'), local('Righteous-Regular'), url(https://fonts.gstatic.com/s/righteous/v9/1cXxaUPXBpj2rGoU7C9WiHGF.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+          }
+
+
+    </style>
+    <section id="main-container">
+        <div id="s1" class="section">
+            <h1 class="intro-wrapper" id="name">SAMAHITH<br>.M.<br>GOWDA</h1>
+            <p class="intro-wrapper" id="occupation">Web Developer</p>
+        </div>
+        <div id="s2" class="section">
+            <div id="right-coloum" class="rightColumn">
+
+
+                <div id="intro-wrapper" class="right-column-intro">
+                    <h2 class="intro-side" id="intro" style="font-family: 'Righteous', cursive;">INFO</h2>
+                    <p class="intro-address" style="color: black" id="address">ADDRESS</p>
+                    <p class="intro-address">Bairava nilaya 6th main 6th cross Vidyanagara Tumkur 572101</p>
+                    <p class="intro-phone" style="color: black" id="phone">PHONE</p>
+                    <p class="intro-phone">+919480890049</p>
+                    <p class="intro-email" style="color: black" id="email">EMAIL</p>
+                    <p class="intro-email">samahithgowda25@gmail.com</p>
+                    <p class="intro-dob-pob" style="color: black" id="dob-pob">DATE/PLACE OF BIRTH</p>
+                    <p class="intro-dob-pob">13-06-2002/TUMKUR</p>
+                    <p class="intro-nationality" style="color: black" id="nationality">NATIONALITY</p>
+                    <p class="intro-nationality">INDIAN</p>
+                </div>
+
+
+                <div id="link-wrapper" class="right-column-link">
+                    <h2 class="link-side" id="links" style="font-family: 'Righteous', cursive;">LINKS</h2>
+                    <p class="link-linkedin" id="linkedin"><a href="https://www.linkedin.com/in/samahtith-gowda-65a1611b6/" target="_blank">LINKEDIN</a></p>
+                    <p class="link-twitter" id="twitter"><a href="https://twitter.com/SamahithG" target="_blank">TWITTER</a></p>
+                    <p class="link-instagram" id="instagram"><a href="https://www.instagram.com/qurious_developer/" target="_blank">INSTAGRAM</a></p>
+                    <p class="link-dribbble" id="dribbble"><a href="https://dribbble.com/Gowda_47" target="_blank">DRIBBBLE</a></p>
+                    <p class="link-github" id="github"><a href="https://github.com/SamahithGowda" target="_blank">GITHUB</a></p>
+                </div>
+
+
+
+                <div id="skill-wrapper" class="right-column-skill">
+                    <h2 class="skill-side" id="skills" style="font-family: 'Righteous', cursive;">SKILLS</h2>
+                    <p class="skill-javascript" id="javascript">JAVASCRIPT</p>
+                    <div class="w3-light-grey">
+                    </div>
+                    <p class="skill-react" id="react">REACT</p>
+                    <p class="skill-redux" id="redux">REDUX</p>
+                    <p class="skill-python" id="python">PYTHON</p>
+                    <p class="skill-ux-ui" id="ux-ui">UX/UI DESIGN</p>
+                    <p class="skill-adobe-xd" id="adobe-xd">ADOBE XD</p>
+                    <p class="skill-adobe-pho" id="adobe-pho">ADOBE PHOTOSHOP</p>
+                    <p class="skill-adobe-ill" id="adobe-ill">ADOBE ILLUSTRATOR</p>
+                </div>
+
+
+
+
+                <div id="lang-wrapper" class="right-column-lang">
+                    <h2 class="lang-side" id="lang" style="font-family: 'Righteous', cursive;">LANGUAGES I SPEAK</h2>
+                    <p class="lang-english" id="english">ENGLISH<p/>
+                    <p class="lang-german" id="german">GREMAN</p>
+                    <p class="lang-kannada" id="kannada">KANNADA</p>
+                    <p class="lang-hindi" id="hindi">HINDI</p>
+                    <p class="lang-telugu" id="telugu">TELUGU</p>
+                    <p class="lang-tamil" id="tamil">TAMIL</p>
+                </div>
+
+
+
+
+
+            </div>
+            <div id="left-coloum" class="leftColumn">
+                <div id="profile-wrappper" class="left-column-profile" style="font-family: 'Righteous', cursive;">
+                    <h2>PROFILE</h2>
+                    <p>Passionate and experienced Web Developer bringing forth skill and advanced knowledge in my Work , seeking to provide the best possible patient care for the Situation Experienced in working collaboratively with a team of web developers to ensure the highest level of customer satisfaction. </p>
+                    <hr>
+                </div>
+                <div id="employment-wrappper" class="left-column-employment-history" style="font-family: 'Righteous', cursive;">
+                    <h2>EMPLOMENT HISTORY</h2><br><br>
+                    <h3 class="employment">WEB-DEVELOPER, FREELANCER</h3>
+                    <p class="employment">25 SEPTEMBER 2018</p>
+                    <p class="employment">Worked well independently and on a team to solve problems.<br>
+                        Served as a friendly, hardworking, and punctual employee.<br>
+                        Organized and prioritized work to complete assignments in a timely, efficient manner for clients.</p>    
+                    <h3 class="employment">UX/UI DESIGNER, FREELANCER</h3>
+                    <p class="employment">26 MARCH 2019</p>
+                    <p class="employment">Worked well independently and on a team to solve problems. 
+                        But not having much experience but can make highly complex designs in my projects which proves my caliber for the jobs</p>
+                    <hr>
+                </div>
+                <div id="education-wrappper" class="left-column-eduction" style="font-family: 'Righteous', cursive;">
+                    <h2 class="education">EDUCATION</h2>
+                    <p class="education">2021-2025</p>
+                    <h3 class="educatuion">B.E COMPUTER SCIENCE</h3>
+                    <h4 class="education">SIDDAGANGA INSTITUTE OF TECHNOLOGY</h4>
+                    <p class="education">2025-2027</p>
+                    <h3 class="educatuion">M.S DATA-SCIENCE </h3>
+                    <h4 class="education">TECHNICAL UNIVERSITY OF DORTMOUND</h4>
+                    <hr><br>
+                </div>
+                <div id="internship-wrappper" class="left-column-internship" style="font-family: 'Righteous', cursive;">
+                    <h2 class="internships">INTERNSHIP</h2><br>
+                        <h3 class="internships">PHYSICAL INTERSHIPS</h3>
+                        <p class="internship">placceholder</p>
+                        <p class="internship">placceholder</p>
+                        <p class="internship">placceholder</p>
+                        <br>
+                        <h3 class="internships">VIRTUAL INTERNSHIPS</h3><br>
+                        <p class="internship">MICROSOFT</p>
+                        <p class="internship">placceholder</p>
+                        <p class="internship">placceholder</p>
+                        <p class="internship">placceholder</p>
+                    <hr><br>
+                </div>
+                <div id="referals-wrappper" class="left-column-courses" style="font-family: 'Righteous', cursive;">
+                    <h2 class="referals">REFERALS</h2><br>
+                        <h3 class="referal">DISHA J SHIVRA</h3>
+                        <p class="referal">TATA CONSULTANCY SERVICE</p>
+                        <p class="referal">+919481968689</p>
+                        <p class="referal">dishajshivra@gmail.com</p><br>
+
+                        <h3 class="refaral">AISHWARYA</h3>
+                        <p class="referal">GOOGLE</p>
+                        <p class="referal">+919481968689</p>
+                        <p class="referal">placceholder@gmail.com</p>
+                    <hr>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+</html>
